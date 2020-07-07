@@ -34,7 +34,6 @@ export const SidebarASidebar = () => (
                 <SidebarMiddleNav />
             </Sidebar.Section>
             { /* END SIDEBAR: Everywhere */ }
-            <SidebarBottomB />
         </Sidebar.MobileFluid>
         { /* END SIDEBAR: Mobile Scroll Wrapper */ }
 

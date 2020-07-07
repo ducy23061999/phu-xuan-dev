@@ -16,7 +16,6 @@ import { randomAvatar } from './../../../utilities';
 
 import { DropdownProfile } from '../Dropdowns/DropdownProfile';
 import { FooterAuth } from '../Pages/FooterAuth';
-import { FooterText } from '../FooterText';
 
 const SidebarBottomB = () => (
     <React.Fragment>
@@ -101,11 +100,6 @@ const SidebarBottomB = () => (
                     >
                         <i className="fa fa-fw fa-question-circle-o" />
                     </Button>
-                    <UncontrolledPopover placement="left-end" target="UncontrolledSidebarPopoverFooter">
-                        <PopoverBody>
-                            <FooterText />
-                        </PopoverBody>
-                    </UncontrolledPopover>
                 </div>
             </Sidebar.ShowSlim>
             { /* END SLIM Only View */ }

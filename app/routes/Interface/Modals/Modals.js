@@ -19,6 +19,7 @@ import { HeaderMain } from "../../components/HeaderMain";
 import {
     HeaderDemo
 } from "../../components/HeaderDemo";
+import { CreateBookView } from '../../../components/CreateBook/CreateBookView';
 
 export const Modals = () => (
     <Container>
@@ -98,27 +99,6 @@ export const Modals = () => (
                             See Modal  <i className="fa fa-angle-right ml-1"></i>
                         </Button>
                         { /* START Example Modal */}
-                        <UncontrolledModal target="modalDefault102">
-                            <ModalHeader tag="h6">
-                                <i className="fa fa-envelope-o mr-2"></i>  Modal: Icons
-                                <span className="small ml-1 text-muted">
-                                    #1.02
-                                </span>
-                            </ModalHeader>
-                            <ModalBody>
-                                { faker.lorem.paragraph() }
-                            </ModalBody>
-                            <ModalFooter>
-                                <UncontrolledModal.Close color="link" className="text-primary">
-                                    <i className="fa fa-close mr-2"></i> 
-                                    Close
-                                </UncontrolledModal.Close>
-                                <UncontrolledModal.Close color="primary">
-                                    <i className="fa fa-check mr-2"></i> 
-                                    Save
-                                </UncontrolledModal.Close>
-                            </ModalFooter>
-                        </UncontrolledModal>
                     { /* END Example Modal */}
                     </CardBody>
                 </Card>
@@ -195,25 +175,7 @@ export const Modals = () => (
                         See Modal  <i className="fa fa-angle-right ml-1"></i>
                     </Button>
                     { /* START Example Modal */}
-                    <UncontrolledModal target="modalDefault202">
-                        <ModalHeader tag="h6">
-                            Modal: Default Size
-                            <span className="small ml-1 text-muted">
-                                #2.02
-                            </span>
-                        </ModalHeader>
-                        <ModalBody>
-                            { faker.lorem.paragraph() }
-                        </ModalBody>
-                        <ModalFooter>
-                            <UncontrolledModal.Close color="link" className="text-primary"> 
-                                Close
-                            </UncontrolledModal.Close>
-                            <UncontrolledModal.Close color="primary"> 
-                                Save
-                            </UncontrolledModal.Close>
-                        </ModalFooter>
-                    </UncontrolledModal>
+                    <CreateBookView  targetId = "modalDefault202"/>
                 { /* END Example Modal */}
                 </CardBody>
             </Card>
@@ -231,25 +193,7 @@ export const Modals = () => (
                         See Modal  <i className="fa fa-angle-right ml-1"></i>
                     </Button>
                     { /* START Example Modal */}
-                    <UncontrolledModal target="modalDefault203" size="lg">
-                        <ModalHeader tag="h5">
-                            Modal: Large Size
-                            <span className="small ml-1 text-muted">
-                                #2.03
-                            </span>
-                        </ModalHeader>
-                        <ModalBody>
-                            { faker.lorem.paragraph() }
-                        </ModalBody>
-                        <ModalFooter>
-                            <UncontrolledModal.Close color="link" className="text-primary" size="lg"> 
-                                Close
-                            </UncontrolledModal.Close>
-                            <UncontrolledModal.Close color="primary" size="lg"> 
-                                Save
-                            </UncontrolledModal.Close>
-                        </ModalFooter>
-                    </UncontrolledModal>
+                    <CreateBookView  targetId = "modalDefault203" />
                 { /* END Example Modal */}
                 </CardBody>
             </Card>

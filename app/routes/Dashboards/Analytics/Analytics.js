@@ -80,7 +80,7 @@ SessionByDevice.propTypes = {
 
 export class Analytics extends React.Component {
     state = {
-        layouts: _.clone(LAYOUT)
+        layouts: _.clone(LAYOUT),
     }
 
     _resetLayout = () => {

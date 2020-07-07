@@ -24,7 +24,7 @@ export const ExtendedTable = () => (
                 <AdvancedTableA />
             </Col>
         </Row>
-        <Row className="mb-5">
+        {/* <Row className="mb-5">
             <Col>
                 <AdvancedTableB />
             </Col>
@@ -58,6 +58,6 @@ export const ExtendedTable = () => (
             <Col>
                 <CellEdit />
             </Col>
-        </Row>
+        </Row> */}
     </Container>
 );

@@ -34,16 +34,9 @@ const LogoThemed = ({ checkBackground, className, ...otherProps }) => (
     <ThemeConsumer>
     {
         ({ style, color }) => (
-            <img
-                src={
-                    checkBackground ?
-                        getLogoUrlBackground(style, color) :
-                        getLogoUrl(style, color)
-                }
-                className={ classNames('d-block', className) }
-                alt="Airframe Logo"
-                { ...otherProps }
-            />
+            <h3>
+                Phú Xuân
+            </h3>
         )
     }
     </ThemeConsumer>

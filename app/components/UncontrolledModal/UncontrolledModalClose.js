@@ -14,7 +14,12 @@ const UncontrolledModalClose = (props) => {
             (value) => (
                 <Tag
                     { ...otherProps }
-                    onClick={ () => value.toggleModal() }
+                    onClick={ () => {
+                        value.toggleModal(); 
+                        if (props.onClick) {
+                            props.onClick();
+                        }
+                    }}
                 />
             )
         }
